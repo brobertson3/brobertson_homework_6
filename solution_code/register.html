@@ -20,15 +20,48 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<section id="main">
 			<div class="container">
+				<h2 class="register_heading">Sign Up!</h2>
+				<h3 class="register_greeting">We would love for you to join our service.  Fill out the information below to begin your road to productivity!</h3>
+				<!-- The section where the form will go -->
 				<section id="contact">
-					<input type="submit" value="Register Now!">
+					<form>
+						<label>
+							Username:
+							<input type="text" name="username" id="username"><br>
+						</label>
+						<label>
+							Email:
+							<input type="email" name="email_address" id="email_address"><br>
+						</label>
+						<label>
+							Password:
+							<input type="password" name="password_orig" id="password_orig"><br>
+						</label>
+						<label>
+							Confirm Password:
+							<input type="password" name="password_confirm" id="password_confirm"><br>
+						</label>
+						<label>
+							What is your professional background?
+							<select>
+								<option name="occupation" value="developer" id="developer">Developer</option>
+								<option name="occupation" value="designer" id="designer">Designer</option>
+								<option name="occupation" value="manager" id="manager">Manager</option>
+							</select><br>
+						</label>
+						<label class="check_box">
+							I want to receive emails regarding this service:
+							<input type="checkbox" checked="checked" id="check_box"><br>
+						</label>
+						<input type="submit" value="Register Now!">
+					</form>
 				</section>
 			</div>
 		</section>

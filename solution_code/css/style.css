@@ -292,6 +292,38 @@ footer p {
   width: 70%;
 }
 
+/***************** Registration *******************/
+section#main {
+  text-align: center;
+}
+
+section#contact {
+  margin: 0 auto;
+}
+
+h3.register_greeting {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h2.register_heading {
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+input[type="submit"] {
+  margin-top: 25px;
+}
+
+label {
+  font-size: 20px;
+}
+
+label.check_box {
+  font-size: 14px;
+}
+
+/****************** Responsive ********************/
 @media only screen and (max-width: 768px) {
   body {
     font-size: 18px;
