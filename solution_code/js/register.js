@@ -16,6 +16,8 @@ $(document).ready(function () {
 		var email_confirm = $('#email_confirm').val();
 		var password = $('#password_orig').val();
 
+		resetAllForms();
+
 		/* use all if statements so that we can check if all are non-empty and show
 		   all error messages at the same time */
 		if (username == '' ) {
@@ -31,6 +33,11 @@ $(document).ready(function () {
 			$('input#password_orig').addClass('error'); //.after("<span class='error_text'>No input left behind! Please enter in a password.</span>");
 			$('#error_password').css("visibility", "visible");
 		} 
+	}
+
+	function resetAllForms () {
+		$('input#username, input#email_address, input#email_confirm, input#password_orig').removeClass('error');
+		$('#error_username, #error_email, #error_email_confirm, #error_password').css("visibility", "hidden");
 	}
 
 	function togglePassword (event) {
