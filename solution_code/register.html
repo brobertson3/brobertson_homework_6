@@ -10,6 +10,8 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/register.js"></script>
 
 	</head>
 	<body>
@@ -34,24 +36,32 @@
 					<form>
 						<label>
 							Username:
-							<input type="text" name="username" id="username"><br>
+							<input type="text" name="username" id="username">
+							<p class="error_text" id='error_username'>No input left behind! Please enter in a username.</p>
 						</label>
 						<label>
 							Email:
-							<input type="email" name="email_address" id="email_address"><br>
+							<input type="email" name="email_address" id="email_address">
+							<p class="error_text" id='error_email'>No input left behind! Please enter in an email address.</p>
 						</label>
 						<label>
 							Confirm Email:
-							<input type="email" name="email_confirm" id="email_confirm"><br>
+							<input type="email" name="email_confirm" id="email_confirm">
+							<p class="error_text" id='error_email_confirm'>No input left behind! Please enter in an email address.</p>
 						</label>
 						<label>
 							Password:
-							<input type="password" name="password_orig" id="password_orig"><br>
+							<input type="password" name="password_orig" id="password_orig">
+							<label class="check_box">
+								Show password:
+								<input type="checkbox" id="show_password"><br>
+							</label>
+							<p class="error_text" id='error_password'>No input left behind! Please enter in a password.</p>
 						</label>
-						<label class="check_box">
+						<!-- <label class="check_box">
 							Show password:
 							<input type="checkbox" id="show_password"><br>
-						</label>
+						</label> -->
 						<label>
 							What is your professional background?
 							<select>
