@@ -220,16 +220,18 @@ blockquote span {
   font-weight: 600;
 }
 
-/*.button {
+.button {
   border-radius: 5px;
   font-weight: 800;
   padding: 12px 0;
-  width: 280px;
-  font-size: 28px;
+  width: 140px;
+  font-size: 16px;
   text-align: center;
   display: block;
   margin: 0 auto;
 }
+
+/*
 .yellow {
   background: #f9e42e;
   color: #033048;
@@ -338,6 +340,30 @@ label.check_box {
 
 input[type='password'] {
   margin-right: 10px;
+}
+
+input[type="submit"] {
+  margin: 40px auto;
+  border: 1px solid;
+  background: #f9e42e;
+  color: #033048;
+}
+
+/* Because..why not..semi cool right!! :D */
+input[type="submit"]:hover {
+  -webkit-animation-name: buttonPulse;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 10;
+  -webkit-box-shadow: 0 0 18px #000;
+}
+
+@-webkit-keyframes buttonPulse {
+  from { 
+    -webkit-box-shadow: 0 0 0 #000; 
+  }
+  to { 
+    -webkit-box-shadow: 0 0 18px #000; 
+  }
 }
 
 /****************** Responsive ********************/
