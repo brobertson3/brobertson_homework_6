@@ -6,8 +6,9 @@ $(document).ready(function () {
 	         3. If checked, then show the password */
 
 	$('form').submit(validateForm);
+	$('#show_password').change(togglePassword);
 
-	function validateForm(event) {
+	function validateForm (event) {
 		event.preventDefault();
 
 		var username = $("#username").val();
@@ -30,5 +31,14 @@ $(document).ready(function () {
 			$('input#password_orig').addClass('error'); //.after("<span class='error_text'>No input left behind! Please enter in a password.</span>");
 			$('#error_password').css("visibility", "visible");
 		} 
+	}
+
+	function togglePassword (event) {
+		// if checked then show the password (apparently .checked() doesn't work anymore?)
+		if($(this).prop("checked")) {
+			$('#password_orig').attr("type", "text");
+		} else {
+			$('#password_orig').attr("type", "password");
+		}
 	}
 });
